@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Ivone</title>
+    <link rel="shortcut icon" href="/imagens/logo-remover.png" type="logo-remover/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="/imagens/logo-remover.png
+                " alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">NewsLesther</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header> <!--fim header-->
+
+        <div class="content">
+            <div class="textbox">
+                <h2>SEJA<br><span>IVONE</span></h2>
+                <p">"Produtos Ivone, com eles <br> o tempo nunca passa" </p>
+                <a href="teto2.html"><button>Ver todos os produtos</button></a>
+            </div><!--fim do textbox-->
+            <div class="imgbox">
+                <img src="imagens/giphy (8).gif" alt="" class="pepsi" >
+
+            </div><!--fim do imgbox-->
+
+        </div><!--fim do content-->
+
+        <ul class="thumb">
+            <li><img src="imagens/batomsemfundo.png" onclick="imgSlider('imagens/opcoes.jfif');changeBgcolor('#A4003D')" ></li>
+            <li><img src="imagens/batom2semf.png" onclick="imgSlider('imagens/jlie.jpg');changeBgcolor('#B80F0A')"></li>
+            <li><img src="imagens/basesemfundo.png" onclick= "imgSlider('imagens/basecore.webp');changeBgcolor('#FECFBF')"></li>
+
+        </ul><!--fim do thumb-->
+
+        <ul class="sci">
+            <li><a href="#"><img src="imagens/facebook.png"></a></li>
+            <li><a href="#"><img src="imagens/twitter.png"></a></li>
+            <li><a href="#"><img src="imagens/instagram.png"></a></li>
+        </ul><!--fim do sci-->
+
+    </section><!--fim seção-->
+
+    <script type="text/javascript">
+        
+    function imgSlider(anything){
+        document.querySelector('.pepsi').src = anything;
+
+    }
+    function changeBgcolor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+    }
+
+    </script>
+    
+</body>
+</html>
